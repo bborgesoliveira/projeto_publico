@@ -20,6 +20,7 @@
         android:id="@+id/textView"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:textSize="40dp"
-        android:gravity="center_vertical|center_horizontal" />
+        android:textStyle="bold|italic"
+        android:textSize="30dp"
+        android:gravity="center" />
 </RelativeLayout>

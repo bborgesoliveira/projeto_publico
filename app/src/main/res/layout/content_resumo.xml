@@ -52,10 +52,12 @@
         android:text="Convênios:"
         android:id="@+id/textViewConv"
         android:layout_below="@+id/textViewApresentaPeriodo"
-        android:layout_alignParentStart="true"
+        android:layout_alignParentStart="false"
         android:layout_marginTop="30dp"
         android:textStyle="italic"
-        android:textSize="18dp" />
+        android:textSize="18dp"
+        android:layout_toRightOf="@+id/buttonInfoConvenios"
+        android:layout_marginLeft="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -64,10 +66,12 @@
         android:text="Valor Global:"
         android:id="@+id/textViewVlGlobal"
         android:layout_below="@+id/textViewConv"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="30dp"
         android:textStyle="italic"
-        android:textSize="18dp" />
+        android:textSize="18dp"
+        android:layout_toRightOf="@+id/buttonInfoVlGlobal"
+        android:layout_marginLeft="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -76,10 +80,12 @@
         android:text="Valor Liberado:"
         android:id="@+id/textViewVlLiberado"
         android:layout_below="@+id/textViewVlGlobal"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="30dp"
         android:textStyle="italic"
-        android:textSize="18dp" />
+        android:textSize="18dp"
+        android:layout_toRightOf="@+id/buttonInfoVlLiberado"
+        android:layout_marginLeft="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -126,5 +132,47 @@
         android:layout_above="@+id/textViewApresentaVlGlobal"
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/textViewApresentaVlLiberado"
-        android:onClick="AbreTabelaConveniosActivity" />
+        android:onClick="AbreTabelaConveniosActivity"
+        android:background="@drawable/roundedbuttonnormal"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:text="i"
+        android:id="@+id/buttonInfoConvenios"
+        android:background="@drawable/roundedbutton"
+        android:layout_alignTop="@+id/textViewConv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="Infos"
+        android:textStyle="bold|italic" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:text="i"
+        android:id="@+id/buttonInfoVlGlobal"
+        android:background="@drawable/roundedbutton"
+        android:layout_alignTop="@+id/textViewVlGlobal"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="true"
+        android:onClick="Infos"
+        android:textStyle="bold|italic" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:text="i"
+        android:id="@+id/buttonInfoVlLiberado"
+        android:background="@drawable/roundedbutton"
+        android:onClick="Infos"
+        android:layout_alignTop="@+id/textViewVlLiberado"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold|italic" />
+
 </RelativeLayout>

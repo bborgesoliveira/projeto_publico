@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">Transparência</string>
+    <string name="app_name">Fiscal Popular</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_filtro">Filtros</string>
     <string name="title_activity_resumo">Resumo</string>
+    <string name="title_activity_tabela">Tabela Convênios</string>
 
     <string-array name="regiao">
         <item>-- Selecione a Região --</item>
@@ -110,6 +111,20 @@
         <item>Prestação de Contas em Complementação</item>
         <item>Assinado</item>
     </string-array>
-    <string name="title_activity_tabela">Tabela Convênios</string>
+    
+    <string name="infoConvenios">Acordos que disciplinam a transferência de recursos financeiros,
+        constantes nos Orçamentos Fiscal e da Seguridade Social da União, e que participe de um lado
+        órgão ou entidade da Administração Pública Federal, direta ou indireta, e do outro lado,
+        órgão ou entidade da administração pública, estadual, municipal ou distrital, direta ou
+        indireta; ou ainda entidades privadas sem fins lucrativos, visando a execução de programa de
+        governo, envolvendo a realização de projeto, atividade, serviço, aquisição de bens ou evento
+        de interesse recíproco, em regime de mútua cooperação.
+    </string>
+
+    <string name="infoValorGlobal">Valor referente a todo dinheiro solicitado no convênio.</string>
+
+    <string name="infoValorLiberado">Valor referente ao que foi disponibilizado pelo governo à
+        instituição solicitante.
+    </string>
 
 </resources>

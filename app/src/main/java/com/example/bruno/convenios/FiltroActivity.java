@@ -124,7 +124,7 @@ public class FiltroActivity extends AppCompatActivity implements AdapterView.OnI
                 break;
             case R.id.spinnerAnoFim:
                 if(position != 0){
-                    anoFimEscolhido = texto.getText().toString();
+                    anoFimEscolhido = " - " + texto.getText().toString();
                 }
                 else{
                     anoFimEscolhido = "";
@@ -149,7 +149,7 @@ public class FiltroActivity extends AppCompatActivity implements AdapterView.OnI
         Intent resumoActivity = new Intent(this, ResumoActivity.class);
         resumoActivity.putExtras(bundleRegiao);
         resumoActivity.putExtra("municipio", municipioEscolhido);
-        resumoActivity.putExtra("periodo", anoInicioEscolhido + " - " + anoFimEscolhido);
+        resumoActivity.putExtra("periodo", anoInicioEscolhido + anoFimEscolhido);
         startActivity(resumoActivity);
     }
 }
